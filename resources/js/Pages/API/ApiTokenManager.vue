@@ -26,7 +26,7 @@
                         <div v-for="permission in availablePermissions">
                             <label class="flex items-center">
                                 <input type="checkbox" class="form-checkbox" :value="permission" v-model="createApiTokenForm.permissions">
-                                <span class="ml-2 text-sm text-gray-600">{{ permission }}</span>
+                                <span class="ml-2 text-sm text-gray-600 dark:text-gray-200">{{ permission }}</span>
                             </label>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                     <template #content>
                         <div class="space-y-6">
                             <div class="flex items-center justify-between" v-for="token in tokens">
-                                <div>
+                                <div class="dark:text-gray-100">
                                     {{ token.name }}
                                 </div>
 
@@ -71,7 +71,7 @@
                                         Last used {{ fromNow(token.last_used_at) }}
                                     </div>
 
-                                    <button class="cursor-pointer ml-6 text-sm text-gray-400 underline focus:outline-none"
+                                    <button class="cursor-pointer ml-6 text-sm text-gray-400 dark:text-gray-200 underline focus:outline-none"
                                                 @click="manageApiTokenPermissions(token)"
                                                 v-if="availablePermissions.length > 0">
                                         Permissions
@@ -99,7 +99,7 @@
                     Please copy your new API token. For your security, it won't be shown again.
                 </div>
 
-                <div class="mt-4 bg-gray-100 px-4 py-2 rounded font-mono text-sm text-gray-500" v-if="$page.jetstream.flash.token">
+                <div class="mt-4 bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded font-mono text-sm text-gray-500 dark:text-gray-400" v-if="$page.jetstream.flash.token">
                     {{ $page.jetstream.flash.token }}
                 </div>
             </template>
@@ -122,7 +122,7 @@
                     <div v-for="permission in availablePermissions">
                         <label class="flex items-center">
                             <input type="checkbox" class="form-checkbox" :value="permission" v-model="updateApiTokenForm.permissions">
-                            <span class="ml-2 text-sm text-gray-600">{{ permission }}</span>
+                            <span class="ml-2 text-sm text-gray-600 dark:text-gray-200">{{ permission }}</span>
                         </label>
                     </div>
                 </div>

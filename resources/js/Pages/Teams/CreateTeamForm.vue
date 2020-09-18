@@ -16,8 +16,8 @@
                     <img class="w-12 h-12 rounded-full object-cover" :src="$page.user.profile_photo_url" :alt="$page.user.name">
 
                     <div class="ml-4 leading-tight">
-                        <div>{{ $page.user.name }}</div>
-                        <div class="text-gray-700 text-sm">{{ $page.user.email }}</div>
+                        <div class="dark:text-gray-100">{{ $page.user.name }}</div>
+                        <div class="text-gray-700 dark:text-gray-300 text-sm">{{ $page.user.email }}</div>
                     </div>
                 </div>
             </div>

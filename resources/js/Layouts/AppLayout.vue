@@ -1,6 +1,6 @@
 <template>
-    <div class="min-h-screen bg-gray-100">
-        <nav class="bg-white border-b border-gray-100">
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <nav class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
             <!-- Primary Navigation Menu -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -32,7 +32,7 @@
 
                                 <template #content>
                                     <!-- Account Management -->
-                                    <div class="block px-4 py-2 text-xs text-gray-400">
+                                    <div class="block px-4 py-2 text-xs text-gray-400 dark:text-gray-600">
                                         Manage Account
                                     </div>
 
@@ -44,11 +44,11 @@
                                         API Tokens
                                     </jet-dropdown-link>
 
-                                    <div class="border-t border-gray-100"></div>
+                                    <div class="border-t border-gray-100 dark:border-gray-700"></div>
 
                                     <!-- Team Management -->
                                     <template v-if="$page.jetstream.hasTeamFeatures">
-                                        <div class="block px-4 py-2 text-xs text-gray-400">
+                                        <div class="block px-4 py-2 text-xs text-gray-400 dark:text-gray-600">
                                             Manage Team
                                         </div>
 
@@ -61,10 +61,10 @@
                                             Create New Team
                                         </jet-dropdown-link>
 
-                                        <div class="border-t border-gray-100"></div>
+                                        <div class="border-t border-gray-100 dark:border-gray-700"></div>
 
                                         <!-- Team Switcher -->
-                                        <div class="block px-4 py-2 text-xs text-gray-400">
+                                        <div class="block px-4 py-2 text-xs text-gray-400 dark:text-gray-600">
                                             Switch Teams
                                         </div>
 
@@ -79,7 +79,7 @@
                                             </form>
                                         </template>
 
-                                        <div class="border-t border-gray-100"></div>
+                                        <div class="border-t border-gray-100 dark:border-gray-700"></div>
                                     </template>
 
                                     <!-- Authentication -->
@@ -183,7 +183,7 @@
         </nav>
 
         <!-- Page Heading -->
-        <header class="bg-white shadow">
+        <header class="bg-white dark:bg-gray-800 shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 <slot name="header"></slot>
             </div>

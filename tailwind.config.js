@@ -16,6 +16,7 @@ module.exports = {
     variants: {
         opacity: ['responsive', 'hover', 'focus', 'disabled'],
         backgroundColor: ['responsive', 'dark', 'hover', 'focus'],
+        borderColor: ['responsive', 'dark', 'hover', 'focus'],
         textColor: ['responsive', 'dark', 'hover', 'focus'],
     },
 
