@@ -58,7 +58,7 @@
             <!-- Theme -->
             <div class="col-span-6 sm:col-span-4">
                 <jet-label for="theme" value="Dark Theme" />
-                <jet-toggle id="theme" type="email" class="mt-1" v-model="form.theme" />
+                <jet-toggle id="theme" class="mt-1" :state="form.theme == 'light' ? false : true" />
                 <jet-input-error :message="form.error('theme')" class="mt-2" />
             </div>
         </template>
@@ -97,7 +97,7 @@
             JetToggle
         },
 
-        props: ['name', 'email'],
+        props: ['name', 'email','theme'],
 
         data() {
             return {
@@ -105,6 +105,7 @@
                     '_method': 'PUT',
                     name: this.name,
                     email: this.email,
+                    theme: this.theme,
                     photo: null,
                 }, {
                     bag: 'updateProfileInformation',

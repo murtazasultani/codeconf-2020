@@ -26,6 +26,11 @@
         methods: {
             toggleState() {
                 this.state = !this.state;
+                if(this.state){
+                    document.body.classList.add('theme-dark');
+                }else{
+                    document.body.classList.remove('theme-dark');
+                }
             }
         }
     }
