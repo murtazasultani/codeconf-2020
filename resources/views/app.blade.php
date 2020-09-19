@@ -17,7 +17,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased theme-dark">
         <div class="bg-gray-100 dark:bg-gray-900">
             @inertia
         </div>

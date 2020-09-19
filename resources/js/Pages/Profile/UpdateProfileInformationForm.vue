@@ -54,6 +54,13 @@
                 <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" />
                 <jet-input-error :message="form.error('email')" class="mt-2" />
             </div>
+
+            <!-- Theme -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="theme" value="Dark Theme" />
+                <jet-toggle id="theme" type="email" class="mt-1" v-model="form.theme" />
+                <jet-input-error :message="form.error('theme')" class="mt-2" />
+            </div>
         </template>
 
         <template #actions>
@@ -76,6 +83,7 @@
     import JetLabel from './../../Jetstream/Label'
     import JetActionMessage from './../../Jetstream/ActionMessage'
     import JetSecondaryButton from './../../Jetstream/SecondaryButton'
+    import JetToggle from './../../Jetstream/Toggle'
 
     export default {
         components: {
@@ -86,6 +94,7 @@
             JetInputError,
             JetLabel,
             JetSecondaryButton,
+            JetToggle
         },
 
         props: ['name', 'email'],

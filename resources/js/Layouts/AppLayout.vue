@@ -44,7 +44,7 @@
                                         API Tokens
                                     </jet-dropdown-link>
 
-                                    <div class="border-t border-gray-100 dark:border-gray-700"></div>
+                                    <div class="border-t border-gray-100 dark:border-gray-800"></div>
 
                                     <!-- Team Management -->
                                     <template v-if="$page.jetstream.hasTeamFeatures">
@@ -61,7 +61,7 @@
                                             Create New Team
                                         </jet-dropdown-link>
 
-                                        <div class="border-t border-gray-100 dark:border-gray-700"></div>
+                                        <div class="border-t border-gray-100 dark:border-gray-800"></div>
 
                                         <!-- Team Switcher -->
                                         <div class="block px-4 py-2 text-xs text-gray-400 dark:text-gray-600">
@@ -79,7 +79,7 @@
                                             </form>
                                         </template>
 
-                                        <div class="border-t border-gray-100 dark:border-gray-700"></div>
+                                        <div class="border-t border-gray-100 dark:border-gray-800"></div>
                                     </template>
 
                                     <!-- Authentication -->
