@@ -18,6 +18,21 @@ module.exports = {
         backgroundColor: ['responsive', 'dark', 'hover', 'focus'],
         borderColor: ['responsive', 'dark', 'hover', 'focus'],
         textColor: ['responsive', 'dark', 'hover', 'focus'],
+        alignContent: ['responsive', 'rtl'],
+        alignItems: ['responsive', 'rtl'],
+        alignSelf: ['responsive', 'rtl'],
+        flex: ['responsive', 'rtl'],
+        flexDirection: ['responsive', 'rtl'],
+        flexGrow: ['responsive', 'rtl'],
+        flexShrink: ['responsive', 'rtl'],
+        flexWrap: ['responsive', 'rtl'],
+        float: ['responsive', 'rtl'],
+        inset: ['responsive', 'rtl'],
+        justifyContent: ['responsive', 'rtl'],
+        justifyItems: ['responsive', 'rtl'],
+        justifySelf: ['responsive', 'rtl'],
+        textAlign: ['responsive', 'rtl'],
+        position: ['responsive', 'rtl']
     },
 
     plugins: [
