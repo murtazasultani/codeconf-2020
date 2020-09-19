@@ -58,6 +58,15 @@ module.exports = {
                     }).processSync(selector)
                 })
             })
+        }),
+        plugin(function({ addUtilities }) {
+            const newUtilities = {
+                '.direction-rtl': {
+                    direction: 'rtl'
+                }
+            }
+
+            addUtilities(newUtilities)
         })
     ],
 };
