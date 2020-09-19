@@ -32,6 +32,16 @@ module.exports = {
                         })
                     }).processSync(selector)
                 })
+            }),
+            addVariant('rtl', ({ modifySelectors, separator }) => {
+                modifySelectors(({ selector }) => {
+                    return selectorParser((selectors) => {
+                        selectors.walkClasses((sel) =>{
+                            sel.value = `rtl${separator}${sel.value}`
+                            sel.parent.insertBefore(sel, selectorParser().astSync(prefix('.direction-rtl ')))
+                        })
+                    }).processSync(selector)
+                })
             })
         })
     ],
