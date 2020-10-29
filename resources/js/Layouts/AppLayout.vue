@@ -224,6 +224,10 @@
             }
         },
 
+        mounted() {
+            document.body.classList.add(`theme-${this.$page.user.theme}`);
+        },
+
         methods: {
             switchToTeam(team) {
                 this.$inertia.put('/current-team', {

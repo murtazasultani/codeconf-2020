@@ -58,7 +58,7 @@
             <!-- Theme -->
             <div class="col-span-6 sm:col-span-4">
                 <jet-label for="theme" value="Dark Theme" />
-                <jet-toggle id="theme" class="mt-1" :state="form.theme == 'light' ? false : true" />
+                <jet-toggle id="theme" class="mt-1" @change="themeChanged($event)" :state="form.theme == 'dark'" />
                 <jet-input-error :message="form.error('theme')" class="mt-2" />
             </div>
         </template>
@@ -148,6 +148,10 @@
                     this.photoPreview = null
                 });
             },
+
+            themeChanged($event){
+                this.form.theme = $event
+            }
         },
     }
 </script>
